@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "Goldman";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Goldman Regular"), local("Goldman-Regular"), url("./fonts/Goldman-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Goldman";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Goldman Bold"), local("Goldman-Bold"), url("./fonts/Goldman-Bold.ttf");
+}
+
+:root {
+  --font-size-h1: 2rem;
+  --font-size-small: 0.707107em;
+  --line-height-primary: 1.681793;
+  --line-height-secondary: 1.189207;
+}
+
+*,
+::before,
+::after {
+  background-color: transparent;
+  border-width: 0;
+  box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: var(--line-height-primary);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 480px;
+  padding: 2rem 1rem;
+}
+
+hgroup {
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: Goldman, system-ui, sans-serif;
+  font-size: var(--font-size-h1);
+  font-weight: 700;
+  line-height: var(--line-height-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+#subtitle {
+  color: dimgray;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem 0;
+}
+
+.button-wrapper {
+  position: relative;
+  margin: 1rem 0 2rem;
+}
+
+.button {
+  background-color: royalblue;
+  border-radius: 2rem;
+  color: white;
+  display: block;
+  filter: drop-shadow(0 1px 1px royalblue);
+  font-family: Goldman, system-ui, sans-serif;
+  font-weight: 400;
+  line-height: var(--line-height-secondary);
+  padding: 0.5rem 1rem;
+  text-decoration-line: none;
+  text-transform: uppercase;
+}
+
+@keyframes pulse-once {
+  0% { transform: scale(1) }
+  3.125% { transform: scale(0.96875) }
+  50% { transform: scale(1.0625) }
+  100% { transform: scale(1) }
+}
+
+.transition-pulse {
+  animation: pulse-once 250ms ease-in-out;
+}
+
+.circle-behind {
+  background-color: dodgerblue;
+  border-radius: 3rem;
+  border: 2px solid dodgerblue;
+  filter: drop-shadow(0 1px 1px dodgerblue);
+  height: 4.25rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 4.25rem;
+  z-index: -1;
+}
+
+footer {
+  border-top: 1px solid gainsboro;
+  font-size: var(--font-size-small);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  text-align: center;
+}
