@@ -11,6 +11,7 @@ This page serves as a central index and portfolio hub, linking directly to the l
 | Tool Name | Description | Status | Live Demo |
 | :--- | :--- | :--- | :--- |
 | **Ultradian Schedule** | Time management model based on 110-minute ultradian rhythms for circadian alignment and peak productivity. | Complete | [View Live](https://robzao.github.io/ultradian-schedule) |
+| **HSL Color Picker** | Generate, preview, and validate colors by adjusting Hue, Saturation, and Lightness (HSL). Ensures input adheres to 0-100 integers. | Complete | [View Live](https://robzao.github.io/hsl-color-picker) |
 | **Numerical Scale Generator** | Calculate geometric and exponential sequences based on base value and ratio. Ideal for custom tuning, type scale design, and data modeling. | Complete | [View Live](https://robzao.github.io/numerical-scale-generator) |
 | **Price Optimizer** | Calculates the optimal selling price for e-commerce by inverting fees, taxes, and costs to ensure your target profit margin is met. | Complete | [View Live](https://robzao.github.io/price-optimizer) |
 | **Profit Allocator** | Quickly allocates net profit into three fixed shares: Investments (1/3), Cash Reserves (1/6), and General Use (1/2). | Complete | [View Live](https://robzao.github.io/profit-allocator) |
