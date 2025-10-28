@@ -1,6 +1,6 @@
 const triggerPulse = (element) => {
   element.classList.add('transition-pulse');
-  setTimeout(() => { element.classList.remove('transition-pulse') }, 250);
+  setTimeout(() => { element.classList.remove('transition-pulse') }, 360);
 };
 
 function setupClickPulse() {
@@ -12,4 +12,6 @@ function setupClickPulse() {
   });
 }
 
-document.addEventListener('DOMContentLoaded', setupClickPulse);
+const init = () => { setupClickPulse() }
+
+document.addEventListener('DOMContentLoaded', init);
